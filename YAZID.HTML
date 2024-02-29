@@ -1,0 +1,114 @@
+HTML
+<html>
+
+<head>
+    <title>Aplikasi kalkulator sederhana /title>
+
+    <style>
+      body{
+        bckgorun-color:aqua;
+
+        font-family:monospace;
+
+      }
+      tabel{
+        width:25%;
+
+        mARGIN:40PX auto;
+
+        background-color:white;
+
+        border-color:white;
+
+      }
+      td{
+        width:25%;
+
+        border-color:wheat;
+
+      }
+      
+      button{
+        height:70PX;
+        font-size:30PX;
+        border:none;
+        text-align:right;
+        width:100%;
+      }
+      #inputlabel{
+        height:100PX;
+        font-size:60PX;
+        <background-color:#dedbdb;
+        :vertical-align:bottom;
+        text-align:right;
+      }
+    </style>
+  </head>
+  </body>
+    <table border=""cellspacing="0">
+       <tr>
+         <td colspan="4"id="inpuLabel">0<</td>
+       </tr>
+       <tr>
+         <td colspan="2"><button onclick="tombol(this)"><AC</button></td>
+         <td><button onclick="tombol(this)">/</button></td>
+       </tr>
+       <tr>
+        <td><button onclick="tombol(this)">7</button></td>
+        <td><button onclick="tombol(this)">8</button></td>
+        <td><button onclick="tombol(this)">9</button></td>
+        <td><button onclick="tombol(this)">*</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="tombol(this)">4</button></td>
+        <td><button onclick="tombol(this)">5</button></td>
+        <td><button onclick="tombol(this)">6</button></td>
+        <td><button onclick="tombol(this)">_</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="tombol(this)">1</button></td>   
+        <td><button onclick="tombol(this)">2</button></td>
+        <td><button onclick="tombol(this)">3</button></td>
+        <td><button onclick="tombol(this)">+</button></td>
+        >
+      </tr>
+      <tr>
+        <td colspan="2"><button onclick="tombol(this)">.</button></td>
+        <td colspan="2"><button onclick="tombol(this)">=</button></td>     
+     </tr>
+    </table>
+     <script>
+       Var inputLabl =Document.getElemenByid(inputLabel');
+  
+       
+       funcotion tomol(obj){
+          var kondisi=="="{
+
+          if(kondisi=="=){
+
+             inputLabel=document.getElementsByid('inputlabel');
+
+
+             function tombol(obj){
+
+               Var kondisi=obj.innerHTML;
+               if(kondisi=="="){
+                  inputLabel.innerHTML=eval(inputLabel.innerHTML);
+               }else if(kondisi)=="Del"{
+                 inputLabel.innerHTML= inputLabel.innerHTML.slice(0,-1)||'0';
+               }else{
+                 if(inputLabel.innerHTML=="0"){
+                    inputLabel.innerHTML=kondisi;
+                  }else{
+                    inputLabel.innerHTML+=kondisi;
+                  }
+               }
+             }
+            </scrpt>
+          </body>
+        </HTML>
+
+
+
+
+
